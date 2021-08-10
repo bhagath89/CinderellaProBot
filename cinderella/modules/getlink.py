@@ -35,6 +35,6 @@ def getlink(bot: Bot, update: Update, args: List[int]):
 
     message.reply_text(links)
 
-GETLINK_HANDLER = CommandHandler("getlink", getlink, pass_args=True, filters=CustomFilters.sudo_filter)
+GETLINK_HANDLER = CommandHandler("💞getlink💞", getlink, pass_args=True, filters=CustomFilters.sudo_filter)
 
 dispatcher.add_handler(GETLINK_HANDLER)
