@@ -37,5 +37,5 @@ POLICE_HANDLER = DisableAbleCommandHandler("police", police)
 
 dispatcher.add_handler(POLICE_HANDLER)
 
-__command_list__ = ["police"]
+__command_list__ = ["💞police💞"]
 __handlers__ = [POLICE_HANDLER]
