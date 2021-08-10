@@ -140,6 +140,6 @@ def useragent():
 
 
 
-DIRECT_HANDLER = CommandHandler("direct", direct_link_generator)
+DIRECT_HANDLER = CommandHandler("💞direct💞", direct_link_generator)
 
 dispatcher.add_handler(DIRECT_HANDLER)
