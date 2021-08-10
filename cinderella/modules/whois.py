@@ -67,7 +67,7 @@ def info(bot: Bot, update: Update, args: List[str]):
             result = result.json()["result"]
             if "custom_title" in result.keys():
                 custom_title = result['custom_title']
-                text += f"\n🛡This user holds the title⚜️ <b>{custom_title}</b> here."
+                text += f"\n😻This user holds the title😻 <b>{custom_title}</b> here."
     except BadRequest:
         pass
 
@@ -120,5 +120,5 @@ def info(bot: Bot, update: Update, args: List[str]):
     except IndexError:
         update.effective_message.reply_text(text, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
 
-INFO_HANDLER = DisableAbleCommandHandler(["info", "whois"],  info, pass_args=True)
+INFO_HANDLER = DisableAbleCommandHandler(["💞info💞", "💞whois💞"],  info, pass_args=True)
 dispatcher.add_handler(INFO_HANDLER)
